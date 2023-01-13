@@ -1,15 +1,33 @@
 ## Doel
 
+Als inwoner van de gemeente Den Haag wil ik graag meer zaakdetails in het klantportaal kunnen zien dan die nu gepresenteerd worden. 
+Ik zou bijvoorbeeld graag de inhoudelijke gegevens van een vergunning of een erfpachtcontract willen zien.
+
 ## Context / achtergrond
+
+De omgevingswet omvat een groot aantal verschillende vergunningen die allemaal verschillende relevante zaakdetails met zich mee brengen. 
+Deze zaakdetails worden door GZAC opgeslagen in het Zaakdetails Object in de Objecten API. 
+Per Zaaktype is het mogelijk om een 'eigen' Objecttype te maken voor de Zaakdetails, omdat de details voor elk Zaaktype anders zijn.
+
+Een deel van deze Zaakdetails moet ook gepresenteerd worden aan de inwoner in het Klantportaal. Hiervoor moet een nieuw Zaakdetails (Klantportaal) Objecttype voor gemaakt worden.
+Dit Objecttype is niet perse hetzelfde als het Zaakdetails Objecttype dat GZAC gebruikt, omdat wellicht niet alle Zaakdetails in het Klantportaal gepresenteerd moeten worden.
 
 ## Wat moet er gebeuren - wat is er nog niet en hebben we wel nodig?
 
+- Vaststellen van een structuur/standaard voor het Zaakdetails Objecttype voor het Klantportaal. 
+- Aanmaken van het Zaakdetails (Klantportaal) Object door GZAC bij het aanmaken van de Zaak
+- Bijwerken van het Zaakdetails (Klantportaal) Object door GZAC op relevante momenten
+- Koppelen van het Zaakdetails (Klantportaal) Object aan de Zaak door GZAC
+- Tonen van de inhoud van het Zaakdetails (Klantportaal) Object op de Zaak details pagina
+
 ## Wat is het eindresultaat?
+
+- De inwoner kan in het Klantportaal de Zaak inzien, en ziet daarbij de inhoudelijke informatie uit het Zaakdetails (Klantportaal) Object
 
 ## Wat valt er buiten scope?
 
 ## Impact - hoeveel inspanning kost dit? 
-Inschatting door PO: S/M/L/XL  
+Inschatting door PO: M/L  
 Inschatting door SA: S/M/L/XL  
 
 ## Besluiten roadmap overleg
